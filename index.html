@@ -1,80 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    
     <title>Frontend-2-Module-Test-Aug</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="home">
+
+<body>
+    <div id="hidden" class="landing">
+        <h1 id="heading">Weather Api</h1>
+        <div id="button" class="btn">Fetch Data</div>
+    </div>
+
+    <div id="display" class="container">
+        <div class="upper">
+            <h1>Welcome To The Weather App</h1>
+            <br>
+            <p class="location">Here is your current location</p>
+            <br>
+            <div id="latitude" class="lat"></div>
+
+            <iframe id="googleMap" class="map" src="" frameborder="0"></iframe>
+        </div>
+        <br>
+        <div class="lower">
+            <h1>Your Weather Data</h1>
+            <div class="details" id="details">
+                <div>Location: New Delhi</div>
+                <div>Wind Speed: 100kmph</div>
+                <div>Humidity : 10</div>
+                <div>Time Zone : GMT+5:30</div>
+                <div>Pressure:10atm</div>
+                <div>Wind Direction:North West</div>
+                <div>UV Index : 500</div>
+                <div>Feels like: 30&deg;</div>
+            </div>
+        </div>
+    </div>
     
-    <div class="home-page">
-        <h1>Weather APIs</h1>
-        <button type="button" id="fetch-data" class="">
-            <div></div>
-            <span>Fetch Data</span>
-        </button>
-
-        <p style="margin-top: 1rem;color: rgb(239, 33, 33);"></p>
-    </div>
-
-    <div class="top">
-        <h1 class="main-page-heading">Welcome to the <span>Weather App</span></h1>
-        <p>Here is your current location</p>
-
-        <div class="flex">
-            <div id="latitude">Lat: 1223423421</div> 
-            <div id="longitude">Long: 1223423421</div>
-        </div>
-    </div>
-
-    <div class="map">
-        <!-- <iframe src="https://maps.google.com/maps?q=12345,12345&z=15&output=embed" frameborder="0" style="height:100%;width: 100%;border: 0;"></iframe> -->
-    </div>
-
-    <div class="data">
-        <h2>Your Weather Data</h2>
-
-        <div class="flex">
-            <div class="box" id="location">
-                Location <b>New Delhi</b>
-            </div>
-            <div class="box" id="speed">
-                Wind Speed <b>100kmph</b>
-            </div>
-            <div class="box" id="humidity">
-                Humidity <b>10</b>
-            </div>
-            <div class="box" id="timezone">
-                Time Zone <b>GMT +530</b>
-            </div>
-            <div class="box" id="pressure">
-                Pressure <b>10atm</b>
-            </div>
-            <div class="box" id="direction">
-                Wind Direction <b>North West</b>
-            </div>
-            <div class="box" id="uv-index">
-                UV Index <b>500</b>
-            </div>
-            <div class="box" id="feels">
-                Feels like <b>30</b>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        Made with 💖 by <a href="https://github.com/tejbari5">Tej Bari</a>
-    </footer>
-
+    <!-- Script JS -->
     <script src="script.js"></script>
 </body>
+
 </html>
