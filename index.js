@@ -15,7 +15,7 @@ const success = (position) => {
     document.cookie = `latitude=${latitude}; path=/weatherFinder/weather-details.html`;
     document.cookie = `longitude=${longitude}; path=/weatherFinder/weather-details.html`;
     setTimeout(() => {
-        window.location.href = "https://amir0707k.github.io/weatherFinder/weather-details.html"
+        window.location.href = "https://tejbari5.github.io/weatherFinder/weather-details.html"
         console.log( window.location.href + "weather-details.html");
     },500)
 }
